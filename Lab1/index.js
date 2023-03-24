@@ -3,5 +3,5 @@ while (x != 100) {
     if (x % 2 != 1) {
         continue;
     }
-    document.write(x);
+    document.write(x + "<br>");
 }
