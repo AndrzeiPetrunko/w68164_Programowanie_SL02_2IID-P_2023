@@ -1,5 +1,30 @@
-form {
-    padding: 11px;
-    background-color: deepskyblue;
+body {
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Inter', sans-serif;
+}
+h1 {
+    font-size: 50px;
+    display: flex;
+}
+h4 {
+    font-size: 30px;
+}
+html {
     box-sizing: border-box;
+    padding-left: 25px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+header {
+    position: fixed;
+    width: 100%;
+    background-color: lightgray;
+    padding: 20px 120xp;
+    box-shadow: 0 0 10px 2px #aaa;
+    z-index: 100;
+    margin-top: 0px;
+    margin-left: 0px;
+    
+
 }
