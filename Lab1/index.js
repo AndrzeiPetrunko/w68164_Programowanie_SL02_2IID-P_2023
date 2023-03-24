@@ -1,7 +1,8 @@
-var x = 0;
-while (x != 100) {
-    if (x % 2 != 1) {
-        continue;
+for (i = 0; i <= 100; i++) {
+    if (i % 2 == 1) {
+        continue
+
     }
-    document.write(x + "<br>");
+    document.write(i + "<br />")
 }
+    
