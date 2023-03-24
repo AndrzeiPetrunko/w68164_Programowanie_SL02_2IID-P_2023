@@ -3,6 +3,6 @@ for (i = 0; i <= 100; i++) {
         continue
 
     }
-    document.write(i + "<br />")
+    console.log(i + ", ")
 }
     
