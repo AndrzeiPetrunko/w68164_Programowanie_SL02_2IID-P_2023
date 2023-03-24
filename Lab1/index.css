@@ -20,11 +20,13 @@ header {
     position: fixed;
     width: 100%;
     background-color: lightgray;
-    padding: 20px 120xp;
+    padding: 20px 120px;
     box-shadow: 0 0 10px 2px #aaa;
     z-index: 100;
     margin-top: 0px;
     margin-left: 0px;
+    top: 0px;
+    left: 0px;
     
 
 }
