@@ -5,4 +5,8 @@ for (i = 0; i <= 100; i++) {
     }
     console.log(i + ", ")
 }
-    
+
+var a, b;
+a = prompt("Liczba 1")
+b = prompt("Liczba 2")
+console.log(Number(a) + Number(b))
