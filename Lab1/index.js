@@ -16,6 +16,6 @@ function printTime() {
     var hours = d.getHours();
     var mins = d.getMinutes();
     var secs = d.getSeconds();
-    document.body.innerHTML = hours + ":" + mins + ":" + secs;
+    document.getElementById("p1").innerHTML = hours+":"+mins+":"+secs;
 }
 setInterval(printTime, 1000);
