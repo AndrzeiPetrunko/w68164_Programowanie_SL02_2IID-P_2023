@@ -11,6 +11,11 @@ a = prompt("Liczba 1")
 b = prompt("Liczba 2")
 console.log(Number(a) + Number(b))
 
-var date = new Date();
-	var current_time = date.getHours()+":"+date.getMinutes()+":"+ date.getSeconds();
-	document.getElementById("p1").innerHTML = current_time;
+function printTime() {
+    var d = new Date();
+    var hours = d.getHours();
+    var mins = d.getMinutes();
+    var secs = d.getSeconds();
+    document.body.innerHTML = hours + ":" + mins + ":" + secs;
+}
+setInterval(printTime, 1000);
