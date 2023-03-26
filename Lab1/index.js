@@ -28,7 +28,7 @@ setInterval(printTime, 1000);
 
 
 function game() {
-    var number = document.getElementById("number").innerHTML
+    var number = document.getElementById("number").value
     let attempts = 0
     do {
         var rand_num = Math.round(100 * Math.random());
