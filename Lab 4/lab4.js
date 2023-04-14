@@ -4,7 +4,7 @@ function Ksiazka(tytul, autor, rok) {
     this.aut = autor;
     this.rok = rok;
     this.fullNazwa = function(){
-        return this.tyt + ' - ' + this.aut + ' in ' + this.rok
+        return this.tyt + ' - ' + this.aut +  `(${this.rok})`
 }
 }
     
