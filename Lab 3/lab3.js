@@ -28,7 +28,7 @@ function Zadanie4() {
 setInterval(Zadanie4, 1000)
 let tries = 1
 function Game() {
-    let num2 = Math.round(Math.random() * 10)
+    let num2 = Math.round(Math.random() * 100)
     let num1 = Number(document.getElementById("t1").value)
     if (num1 > num2){
         alert("Liczba jest większa od wylosowanej !!!")
