@@ -26,11 +26,10 @@ function Zadanie4() {
     
 }
 setInterval(Zadanie4, 1000)
-
+let tries = 0
 function Game() {
-    let num2 = Math.round(Math.random() * 100)
-    let num1 = document.getElementById("t1").value
-    let tries = 0
+    let num2 = Math.round(Math.random() * 10)
+    let num1 = Number(document.getElementById("t1").value)
     if (num1 > num2){
         alert("Liczba jest większa od wylosowanej !!!")
         tries++
@@ -39,8 +38,10 @@ function Game() {
         alert("Liczba jest mniejsza od wylosowanej !!!")
         tries++
     }
-    if (num1 == num2) {
+    if (num1 === num2) {
         alert("Congrats !!!")
+        tries = 0
+
     }
 }
 
