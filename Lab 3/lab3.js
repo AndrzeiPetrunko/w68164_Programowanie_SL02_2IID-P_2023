@@ -39,7 +39,8 @@ function Game() {
         tries++
     }
     if (num1 === num2) {
-        alert("Congrats !!!)
+        alert(`Congrats!!! \n Amount of tries is: ${tries}`)
+        tries = 0
     }
 }
 
