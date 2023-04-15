@@ -27,3 +27,17 @@ function Student(imie, nazwisko, num_alb, o1, o2, o3) {
     }
     const stud1 = new Student("John", "Smith", "w12345", 3, 5, 5)
     console.log(stud1.fullInfo())
+
+//Lab 4 - Zad 3
+function Car(marka, model, rok_p, kolor, speed) {
+    this.marka = marka
+    this.model = model
+    this.rok_p = rok_p
+    this.kolor = kolor
+    this.speed = speed
+    this.acceleration = function() {
+        this.speed = this.speed + 10
+    }
+}
+const carNew = new Car("BMW","X5",2015,"Niebieski",50 )
+console.log(carNew)
