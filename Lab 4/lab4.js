@@ -40,7 +40,7 @@ function Car(marka, model, rok_p, kolor, speed) {
     }
     this.age = function(){
         let year = new Date()
-        return year.getFullYear - this.rok_p
+        return Number(year.getFullYear) - Number(this.rok_p)
     }
 }
 const carNew = new Car("BMW","X5",2015,"Niebieski",50 )
