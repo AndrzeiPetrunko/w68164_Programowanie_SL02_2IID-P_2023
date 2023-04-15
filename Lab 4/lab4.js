@@ -35,9 +35,11 @@ function Car(marka, model, rok_p, kolor, speed) {
     this.rok_p = rok_p
     this.kolor = kolor
     this.speed = speed
-    this.acceleration = function() {
-        this.speed = this.speed + 10
+    this.acceleration = function(n) {
+        this.speed = this.speed + n
     }
 }
 const carNew = new Car("BMW","X5",2015,"Niebieski",50 )
+console.log(carNew)
+carNew.acceleration(50)
 console.log(carNew)
