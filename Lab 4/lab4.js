@@ -38,8 +38,13 @@ function Car(marka, model, rok_p, kolor, speed) {
     this.acceleration = function(n) {
         this.speed = this.speed + n
     }
+    this.age = function(){
+        let year = new Date()
+        return year.getFullYear - this.rok_p
+    }
 }
 const carNew = new Car("BMW","X5",2015,"Niebieski",50 )
 console.log(carNew)
 carNew.acceleration(50)
-console.log(carNew)
+console.log(carNew.age())
+
