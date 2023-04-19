@@ -47,26 +47,34 @@ const carNew = new Car("BMW","X5",2015,"Niebieski",50 )
 console.log(carNew)
 carNew.acceleration(50)
 console.log(carNew.age())
-// Lab 4 - Zad 5
+// Lab 4 - Zad 5 & 6
+function newObject(){
+    bok1 = parseInt(document.getElementById("bok1").value)
+    bok2 = parseInt(document.getElementById("bok2").value)
+    if (bok1 <= 0 || bok2 <= 0){
+        console.log("Jedna z liczb jest równa lub mniejsza od zera !!!")
+        return
+    }
+    function prostokat(bok1, bok2) {
+        this.width = bok1;
+        this.height = bok2;
+        this.pole = function() {
+            return `Pole tego prostokąta: ${this.height * this.width} jendostek kwadratowych.`
+        }
+        this.obwod = function(){
+            return `Obwód tego prostokąta: ${this.height * 2 + this.width * 2} jednostek.`
+        }
+        this.ifKwadrat = function() {
+            if (this.height === this.width) {
+                return "To jest kwadrat."
+            }
+            else {
+                return "To jest prostokąt."
+            }
+            }
+        }
+    const prostokaT = new prostokat(bok1,bok2)
+    console.log(`${prostokaT.pole()} \n\n${prostokaT.obwod()} \n\n${prostokaT.ifKwadrat()}`)
+}
 
-function prostokat(wysokosc, szerokosc) {
-    this.width = szerokosc;
-    this.height = wysokosc;
-    this.pole = function() {
-        return `Pole tego prostokąta: ${this.height * this.width} jendostek kwadratowych.`
-    }
-    this.obwod = function(){
-        return `Obwód tego prostokąta: ${this.height * 2 + this.width * 2} jednostek.`
-    }
-    this.ifKwadrat = function() {
-        if (this.height === this.width) {
-            return "To jest kwadrat."
-        }
-        else {
-            return "To jest prostokąt."
-        }
-        }
-    }
-const prostokaT = new prostokat(12,12)
-console.log(`${prostokaT.pole()} \n\n${prostokaT.obwod()} \n\n${prostokaT.ifKwadrat()}`)
-// Lab 4 - Zad 6
+
