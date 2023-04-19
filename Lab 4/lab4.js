@@ -28,7 +28,7 @@ function Student(imie, nazwisko, num_alb, o1, o2, o3) {
     const stud1 = new Student("John", "Smith", "w12345", 3, 5, 5)
     console.log(stud1.fullInfo())
 
-//Lab 4 - Zad 3
+//Lab 4 - Zad 3 & 4
 function Car(marka, model, rok_p, kolor, speed) {
     this.marka = marka
     this.model = model
@@ -40,11 +40,33 @@ function Car(marka, model, rok_p, kolor, speed) {
     }
     this.age = function(){
         let year = new Date()
-        return Number(year.getFullYear) - Number(this.rok_p)
+        return `Wiek tego samochodu: ${year.getFullYear() - this.rok_p} lat.`
     }
 }
 const carNew = new Car("BMW","X5",2015,"Niebieski",50 )
 console.log(carNew)
 carNew.acceleration(50)
 console.log(carNew.age())
+// Lab 4 - Zad 5
 
+function prostokat(wysokosc, szerokosc) {
+    this.width = szerokosc;
+    this.height = wysokosc;
+    this.pole = function() {
+        return `Pole tego prostokąta: ${this.height * this.width} jendostek kwadratowych.`
+    }
+    this.obwod = function(){
+        return `Obwód tego prostokąta: ${this.height * 2 + this.width * 2} jednostek.`
+    }
+    this.ifKwadrat = function() {
+        if (this.height === this.width) {
+            return "To jest kwadrat."
+        }
+        else {
+            return "To jest prostokąt."
+        }
+        }
+    }
+const prostokaT = new prostokat(12,12)
+console.log(`${prostokaT.pole()} \n\n${prostokaT.obwod()} \n\n${prostokaT.ifKwadrat()}`)
+// Lab 4 - Zad 6
