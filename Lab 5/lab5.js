@@ -1,5 +1,5 @@
 // Lab 5 - Zad 1
-/*let wiek = parseInt(prompt("Ile masz na lat?: "))
+let wiek = parseInt(prompt("Ile masz na lat?: "))
 if (wiek >= 18){
     alert("Jesteś pełnoletni.")
 }
@@ -11,7 +11,7 @@ else {
 }
 // Lab 5 - Zad 2
 let temperature = parseInt(prompt("Podaj temperaturę (Celsjusza): "))
-console.log(`${temperature} stopniów Celsjuzsa są równe ${temperature * 9/2 + 32} stopniom Fahrenheita.`) */
+console.log(`${temperature} stopniów Celsjuzsa są równe ${temperature * 9/2 + 32} stopniom Fahrenheita.`) 
 // Lab 5 - Zad 3
 let list = [6,6,1,3,0,-7,6,-2,2]
 function listDo(){
