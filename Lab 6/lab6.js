@@ -11,20 +11,26 @@ function silnia(n) {
         while (n > 0)
     }
 }
+
 console.log(`Silnia ${n} jest równa ${silnia(n)}`) */
 // Lab 6 - Zad 2
-// Lab 6 - Zad 4
-const btn = document.getElementById('123')
-btn.addEventListener('click', clickButton)
-var txt = document.getElementById('txt1')
-clickIs = false
-const clickButton = function(){
-        if (clickIs == false) {
-            txt.textContent = "Hejka"
-            clickIs = true
-        }
-        else {
-            txt.textContent = " "
-            clickIs = false
-        }
+let selected;
+const btn1 = document.getElementById("i1");
+const btn2 = document.getElementById("i2");
+const btn3 = document.getElementById("i3");
+btn1.addEventListener('click', ()=>handleClick(btn1));
+btn2.addEventListener('click', ()=>handleClick(btn2));
+btn3.addEventListener('click', ()=>handleClick(btn3));
+console.log(btn1)
+
+function handleClick(btn){
+if(selected){
+    selected.classList.remove("selected");
 }
+    btn.classList.add("selected")
+    selected = btn
+}
+// Lab 6 - Zad 3
+const btn4 = document.getElementById("i4")
+btn4.addEventListener('click', transparencyChange())
+// Lab 6 - Zad 4
