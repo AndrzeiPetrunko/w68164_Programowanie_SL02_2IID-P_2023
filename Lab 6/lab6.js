@@ -1,5 +1,5 @@
 // Lab 6 - Zad 1
-/*let n = prompt("Podaj liczbę dla Zadania 1: ")
+let n = prompt("Podaj liczbę dla Zadania 1: ")
 function silnia(n) {
     if (n == 0 || n == 1 ) {
         return 1
@@ -12,7 +12,7 @@ function silnia(n) {
     }
 }
 
-console.log(`Silnia ${n} jest równa ${silnia(n)}`) */
+console.log(`Silnia ${n} jest równa ${silnia(n)}`) 
 // Lab 6 - Zad 2
 let selected;
 const btn1 = document.getElementById("i1");
