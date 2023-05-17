@@ -13,15 +13,16 @@ class samochod{
     constructor(a, speed){
         this.imie = a;
         this.speed = speed;
+        this.speedChange = function(speed) {
+            this.speed += 10
     }
-    speedChange(speed) {
-        this.speed += 10
+       
     }
 }
 
-let car = new samochod("BMW", speed)
+let car = new samochod("BMW", 12)
 console.log(car)
-car.speedChange(speed)
+car.speedChange()
 console.log(car)
 
 
