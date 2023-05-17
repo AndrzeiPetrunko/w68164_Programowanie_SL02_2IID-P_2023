@@ -13,8 +13,13 @@ class samochod{
     constructor(a, speed){
         this.imie = a;
         this.speed = speed;
-        this.speedChange = function(speed) {
-            this.speed += 10
+        this.speedChange = (speed) => {
+            if (this.speed < 50){
+                this.speed += 10
+            }
+            else {
+                this.speed -= 10
+            }
     }
        
     }
